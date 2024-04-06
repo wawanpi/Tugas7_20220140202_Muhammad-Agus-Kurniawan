@@ -1,0 +1,104 @@
+body {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('le-sserafim-easy-mv-kazuha-yunjin-eunchae-chaewon-sakura-4k-wallpaper-uhdpaper.com-114@1@o.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@font-face {
+    font-family: 'wan';
+    src: url('Gotham-Black.otf') format('truetype'); 
+    font-style: normal;
+}
+body {
+    font-family: 'wan', Arial, sans-serif; 
+}
+
+h1, h2, h3 {
+    font-family: 'wan', Arial, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    color: #ffde4d6b;
+    border-top: #fafafa;
+    border-radius: 10%;
+    -webkit-text-stroke: 1px #ffffff;
+    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+    
+
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style-type: none;
+}
+
+li {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    z-index: 0;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+li:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ffffff;
+    margin: 20px 0;
+}
